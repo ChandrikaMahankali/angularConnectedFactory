@@ -4,7 +4,7 @@ import { TabsComponent } from '../tabs/tabs.component';
 
 @Component({
   selector: 'app-tab',
-  template: `<div [hidden]="!selected">
+  template: `<div [hidden]="!active">
   <ng-content></ng-content>
 </div>`
 })

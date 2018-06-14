@@ -18,15 +18,15 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  getData(token) {
-    const data = {
-      '__RequestVerificationToken': token,
-      'key': 'urn:beijing103:ua:beijing:line1:assemblystation',
-      'nodeId': 'ns=2;i=434',
-      'view': 'Hour'
-    };
-    return this.http.post(url, data, httpOptions).pipe(map((response: Response) => {
-    console.log (response.json());
-    }));
-  }
+  // getData(token) {
+  //   const data = {
+  //     '__RequestVerificationToken': token,
+  //     'key': 'urn:beijing103:ua:beijing:line1:assemblystation',
+  //     'nodeId': 'ns=2;i=434',
+  //     'view': 'Hour'
+  //   };
+  //   return this.http.post(url, data, httpOptions).pipe(map((response: Response) => {
+  //   console.log (response.json());
+  //   }));
+  // }
 }

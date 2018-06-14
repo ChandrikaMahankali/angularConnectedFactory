@@ -27,7 +27,7 @@ export class DashboardComponent implements OnInit {
 
   }
 
-  openContextPanelFactory() {
+  openContextPanelFactory(tab) {
     this.contextpanel = this.contextpanel === 'out' ? 'in' : 'out';
   }
 

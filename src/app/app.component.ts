@@ -44,10 +44,10 @@ export class AppComponent implements OnInit {
     console.log('token: ' + this.service.userInfo.token);
     console.log(this.service.userInfo.profile);
 
-    this.dataService.getData(this.service.userInfo.token)
-    .subscribe(data => {
-      this.data.push(data);
-    });
+    // this.dataService.getData(this.service.userInfo.token)
+    // .subscribe(data => {
+    //   this.data.push(data);
+    // });
   }
 
   // Logout Method
