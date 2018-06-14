@@ -1,0 +1,12 @@
+.map-container{
+    transform-origin: top left;
+    position: relative;
+    height: 270px;
+    .map-container-img{
+        width: 100%;
+        position: relative;
+        height: 100%;
+        vertical-align: middle;
+        border: 0;
+    }
+}

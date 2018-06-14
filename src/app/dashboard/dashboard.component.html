@@ -1,0 +1,40 @@
+<div class="container-fluid">
+  <header>
+     <div class="navbar">
+        <span class="app-header">IoT Suite - Connected factory</span>
+        <span class="page-header">Dashboard</span>
+        <span class="account">
+          <span class="account-name">acpcloud1083@hotmail.com</span>
+          <!-- <span class="account-signout">
+            <a href="/SignOut">SIGN OUT</a>
+          </span> -->
+        </span>
+     </div>
+  </header>
+  <section class="sidenav">
+    <div class="navigation-link navigation-link-hamburger"></div>
+    <a href="#home" class="navigation-link navigation-link-home"></a>
+    <a href="#browser" class="navigation-link navigation-link-browser"></a>
+    <a href="#addgateway" class="navigation-link navigation-link-addgateway"></a>
+    <a href="#addopcserver" class="navigation-link navigation-link-addopcserver"></a>
+  </section>
+  <div class="main-panel">
+  <div class="main-container">
+     <div class="row dashboard-container">
+        <div class="col-md-6 col-lg-6 col-sm-6 factory-view">
+          <app-factory (openPanelFactory)="openContextPanelFactory($event)"></app-factory>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 map-view">
+          <app-map></app-map>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 alarms-view">
+          <app-alarms (openPanelAlarms)="openContextPanelAlarms($event)"></app-alarms>     
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 progress-view">
+          <app-progress></app-progress>
+        </div>
+     </div>
+  </div>
+  <app-contextpanel [@slideInOut]="contextpanel" (closePanelFactory)="openContextPanelFactory($event)"></app-contextpanel>
+  <app-contextpanelfilter [@slideInOut]="contextpanelfilter" (closePanelAlarms)="openContextPanelAlarms($event)"></app-contextpanelfilter>
+  <app-alertdetails [@slideInOut]="alertdetails" (closePanelAlerts)="openContextPanelAlarms($event)"></app-alertdetails>

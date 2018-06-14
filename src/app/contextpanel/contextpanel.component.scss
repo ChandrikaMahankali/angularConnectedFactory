@@ -1,0 +1,65 @@
+.contextpanel {
+    .contextpanel-header{
+        border-bottom: 1px solid #afb9c3;
+        border-top: 1px solid #afb9c3;
+        padding: 10px;
+        color: #ffffff;
+        font-size: 15px;
+        .contextpanel-header-title{
+            display: inline-block;
+        }
+        .closebtn{
+            display: inline-block;
+            float: right;
+            .contextpanel-cancel-icon{
+                width: 16px;
+                height: 16px;
+                position: relative;
+                color: #fff;
+                outline: none;
+                display: inline;
+            }
+        }
+    }
+    .contextpanel-list-container{
+        padding: 10px;
+        .contextpanel-select-list-label{
+            margin-bottom: 5px;
+            margin-top: 20px;
+            color: #ffffff;
+            font-size: 15px;
+        }
+        .selectpicker {
+            border-radius: 0px;
+            border: 1px solid #afb9c3;
+            background: transparent;
+            height: 28px!important;
+            color: #afb9c3;
+            width: 85%;
+            font-size: 13px;
+            padding-left: 0px;
+        }
+    }
+    .contextpanel-select-filter-alert-button{
+        margin-left: 150px;
+        .btn.btn-default.btn-contextpanel {
+            min-width: 85px;
+            font-size: 14px;
+            background: transparent;
+            color: #fff;
+        }
+    }
+}
+:host {
+    background: #537391;
+    color: #333333;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    width: 350px;
+    min-width: 250px;
+    z-index: 9999;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }

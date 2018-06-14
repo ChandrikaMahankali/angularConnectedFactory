@@ -1,0 +1,70 @@
+.alertdetails {
+    .alertdetails-header{
+        border-bottom: 1px solid #afb9c3;
+        border-top: 1px solid #afb9c3;
+        padding: 10px;
+        color: #ffffff;
+        font-size: 15px;
+        .alertdetails-header-title{
+            display: inline-block;
+        }
+        .closebtn{
+            display: inline-block;
+            float: right;
+            .alertdetails-cancel-icon{
+                width: 16px;
+                height: 16px;
+                position: relative;
+                color: #fff;
+                outline: none;
+                display: inline;
+            }
+        }
+    }
+    .alertdetails-list-container{
+        padding: 10px;
+        margin-top: 10px;
+        .alertdetails-list-label{
+            font-size: 15px;
+            color: #ffffff;
+            margin-bottom: 0px;
+        }
+        .alertdetails-list-value{
+            margin-bottom: 5px;
+            font-size: 13px;
+            color: #afb9c3;
+        }
+        .selectpicker {
+            border-radius: 0px;
+            border: 1px solid #afb9c3;
+            background: transparent;
+            height: 28px!important;
+            color: #afb9c3;
+            width: 80%;
+            font-size: 13px;
+            padding-left: 0px;
+        }
+    }
+    .alertdetails-select-filter-alert-button{
+        margin-left: 230px;
+        .btn.btn-default.btn-alertdetails {
+            min-width: 85px;
+            font-size: 14px;
+            background: transparent;
+            color: #fff;
+        }
+    }
+}
+:host {
+    background: #537391;
+    color: #333333;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    width: 350px;
+    min-width: 250px;
+    z-index: 9999;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }

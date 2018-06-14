@@ -1,0 +1,30 @@
+<div class="alertdetails">
+    <div class="alertdetails-header">
+      <div class="alertdetails-header-title">Alert details</div>
+      <p class="closebtn">
+        <img (click)="closeAlertdetails()" class="alertdetails-cancel-icon" src="/assets/images/cancel.svg">
+      </p>
+    </div>
+      
+        <div class="alertdetails-list-container">
+            <p class="alertdetails-list-label">Description:</p>
+            <p class="alertdetails-list-value">Value above maximum</p>
+            <p class="alertdetails-list-label">Time:</p>
+            <p class="alertdetails-list-value">2:02 PM-6/12/2018</p>
+            <p class="alertdetails-list-label">Location:</p>
+            <p class="alertdetails-list-value">Mumbai, Production Line 1, Assembly, Pressure</p>
+            <p class="alertdetails-list-label">Occurences:</p>
+            <p class="alertdetails-list-value">13099</p>
+            <p class="alertdetails-list-value">Loading data from Azure Time Series Insights ..</p>
+            <p class="alertdetails-list-label">Choose action:</p>
+            <div>
+                <select id="alertSelector0" class="selectpicker form-control" data-live-search="true" data-size="10" tabindex="-98">
+                  <option selected="" value="empty">Acknowledge alert</option>
+                </select>
+            </div>
+        </div>
+        
+    <div class="alertdetails-select-filter-alert-button">
+        <input class="btn btn-default btn-alertdetails" type="submit" value="Apply">
+    </div>
+</div>

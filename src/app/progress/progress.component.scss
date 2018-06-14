@@ -1,0 +1,103 @@
+.progress-container{
+    margin-left: 15px;
+    margin-right: 15px;
+    .progress-container-1{
+        margin-bottom: 10px;
+        .progress-header{
+            font-size: 15px;
+            background: rgba(83, 115, 145, 0.5);
+            height: 38px;
+            /* padding-top: 4px; */
+            /* background: #818181; */
+            .header-name{
+                overflow: hidden;
+                white-space: nowrap;
+                display: inline-block;
+                vertical-align: text-top;
+                margin-left: 0;
+                padding-top: 7px;
+                margin-bottom: 0px;
+            }
+        }
+        .progress-nav{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 13px;   
+            app-tabs{
+                .nav-tabs{
+                    li{
+                        float: left;
+                        margin-bottom: -1px;
+                        a{
+                            margin-right: 2px;
+                            line-height: 1.42857143;
+                            border: 1px solid transparent;
+                            border-radius: 4px 4px 0 0;
+                            color: #333333;
+                            text-decoration: none;
+                            cursor: pointer;
+                        }
+                    }
+                    li.active {
+                        a, a:focus, a:hover {
+                            color: #333333;
+                            cursor: default;
+                            background-color: #fff;
+                            border: 1px solid #ddd;
+                            border-bottom-color: transparent;
+                            font-weight: bold;
+                            color: #333333;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+        .progress-bar-container{
+            /* margin: 20px; */
+            .gauge-container{
+                height: 150px;
+                width: 250px;
+                path  {
+                    fill: #cccccc;
+                }
+            }
+            .progress-chart{
+                .chart-container {
+                    height: 100px;
+                    width: 280px;
+                    path  {
+                        fill: none;
+                        stroke: #333333;
+                    }
+                    .tick {
+                        font-size: 11px;
+                    }
+                }
+                .nav-tabs{
+                    margin-left: 100px;
+                    border-bottom: none;
+                    li {
+                        a{
+                            position: relative;
+                            display: block;
+                            padding: 0px 15px;
+                            color: #333333;
+                            font-size: 13px;
+                            cursor: pointer;
+                        }
+                    }
+                    li.active{
+                        a, a:focus, a:hover {
+                            color: #333333;
+                            cursor: default;
+                            font-weight: bold;
+                            color: #333333;
+                            text-decoration: underline;
+                        }
+                    }
+                }   
+            }
+        }
+    }
+}

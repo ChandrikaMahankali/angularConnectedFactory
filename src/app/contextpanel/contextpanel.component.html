@@ -1,0 +1,34 @@
+    <div class="contextpanel">
+      <div class="contextpanel-header">
+        <div class="contextpanel-header-title">Filter</div>
+        <p class="closebtn">
+          <img (click)="closeContextPanel()" class="contextpanel-cancel-icon" src="/assets/images/cancel.svg">
+        </p>
+      </div>
+        
+          <div class="contextpanel-list-container">
+              <p class="contextpanel-select-list-label">Alert cause</p>
+              <div>
+                  <select id="alertSelector0" class="selectpicker form-control" data-live-search="true" data-size="10" tabindex="-98">
+                    <option selected="" value="empty">All</option>
+                  </select>
+              </div>
+              <p class="contextpanel-select-list-label">Location</p>
+              <div>
+                  <select id="alertSelector0" class="selectpicker form-control" data-live-search="true" data-size="10" tabindex="-98">
+                    <option selected="" value="empty">All</option>
+                  </select>
+              </div>
+              <p class="contextpanel-select-list-label">Production line</p>
+              <div>
+                  <select id="alertSelector0" class="selectpicker form-control" data-live-search="true" data-size="10" tabindex="-98">
+                    <option selected="" value="empty">All</option>
+                  </select>
+              </div>
+          </div>
+          
+      <div class="contextpanel-select-filter-alert-button">
+          <input class="btn btn-default btn-contextpanel" type="submit" value="Apply">
+          <input class="btn btn-default btn-contextpanel" type="submit" value="Clear">
+      </div>
+  </div>

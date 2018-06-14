@@ -1,0 +1,114 @@
+.factory-header{
+    font-size: 15px;
+    background: rgba(83, 115, 145, 0.5);
+    height: 38px;
+    /* padding-top: 4px; */
+    /* background: #818181; */
+    .back-icon{
+        margin-right: -25px;
+        margin-left: -5px;
+        padding-top: 6px;
+        .back-icon-link{
+            margin-right: 0;
+            float: left;
+            padding-top: 7px;
+            .back-icon-img{
+                width: 14px;
+                height: 14px;
+                position: relative;
+                right: 0;
+                bottom: 8px;
+                outline: none;
+                vertical-align: middle;
+            }
+        }
+    }
+    .header-name{
+        overflow: hidden;
+        white-space: nowrap;
+        display: inline-block;
+        vertical-align: text-top;
+        margin-left: 0;
+        padding-top: 7px;
+        margin-bottom: 0px;
+    }
+    .filter-icon-link{
+        font-size: 16px;
+        padding-top: 7px;
+        color: #333333;
+        text-decoration: none;
+        text-align: right;
+        cursor: pointer;
+        .filter-icon-img{
+            width: 12px;
+            height: 12px;
+            position: relative;
+            right: -12px;
+            outline: none;
+            margin-right: 12px;
+            margin-bottom: 4px;
+            color: #afb9c3;
+            vertical-align: middle;
+        }
+    }
+}
+.factory-list-header{
+    font-size: 12px;
+    padding-top: 15px;
+    padding-bottom: 7px;
+    font-weight: bold;
+    color: #666666;
+}
+.factory-list-container{
+    height: 192px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+    .factory-list{
+        font-size: 12px;
+        padding-top: 8px;
+        height: 32px;
+        vertical-align: middle;
+        .factory-list-status{
+            padding-left: 15px;
+        }
+        .factory-list-location{
+            padding-left: 20px;
+        }
+        .factory-list-production{
+            padding-left: 25px;
+        }
+        .circle{
+            display: flex;
+        }
+        .circle:before {
+            content: '';
+            border-radius: 50%;
+            height: 8px;
+            width: 8px;
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+        .green:before {
+            background-color: #1baa25;
+        }
+        .red:before {
+            background-color: #ff0303;
+        }
+        .orange:before {
+            background-color: #ffaa22;
+        }
+        .fwd-icon-img{
+            width: 14px;
+            height: 14px;
+            outline: none;
+            vertical-align: middle;
+            margin-top: 3px;
+        }
+    }
+    .odd-row{
+        background: #f9f9f9;
+    }
+}

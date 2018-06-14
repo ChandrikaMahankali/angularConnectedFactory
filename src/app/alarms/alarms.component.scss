@@ -1,0 +1,94 @@
+.alarms-header{
+    font-size: 15px;
+    background: rgba(83, 115, 145, 0.5);
+    height: 38px;
+    /* padding-top: 4px; */
+    /* background: #818181; */
+    .header-name{
+        overflow: hidden;
+        white-space: nowrap;
+        display: inline-block;
+        vertical-align: text-top;
+        margin-left: 0;
+        padding-top: 7px;
+        margin-bottom: 0px;
+    }
+    .filter-icon-link{
+        font-size: 16px;
+        padding-top: 7px;
+        color: #333333;
+        text-decoration: none;
+        text-align: right;
+        cursor: pointer;
+        .filter-icon-img{
+            width: 12px;
+            height: 12px;
+            position: relative;
+            right: -12px;
+            outline: none;
+            margin-right: 12px;
+            margin-bottom: 4px;
+            color: #afb9c3;
+            vertical-align: middle;
+        }
+    }
+}
+.alarms-list-container{
+    height: 230px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: block;
+    .alarms-list{
+        display: block;
+        position: relative;
+        padding-left: 16px;
+        height: 42px;
+        padding-right: 16px;
+        cursor: pointer;
+        .alert-item-header{
+            font-size: 13px;
+            font-weight: 400;
+            padding-top: 3px;
+            margin-left: 14px;
+            margin-right: 0;
+            .alert-item-header-text{
+                margin-left: 10px;
+                white-space: nowrap;
+                margin-top: -5px;
+            }
+        }
+        .triangle-orange{
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-bottom: 10px solid #ffaa22;
+            margin-left: 0px;
+            padding-top: 6px;  
+        }
+        .alert-item{
+            .alerts-details{
+                font-size: 11px;
+                margin-top: 5px;
+                // .alerts-details1{
+
+                // }
+                // .alerts-details2{
+                    
+                // }
+                // .alerts-details3{
+                    
+                // }
+                // .alerts-details4{
+                    
+                // }
+            }
+            .alert-time{
+                font-size: 12px;
+            }
+        }
+    }
+    .odd-row{
+        background: #f9f9f9;
+    }
+}

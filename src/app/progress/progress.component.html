@@ -1,0 +1,33 @@
+<div class="progress-container">
+    <div class="progress-container-1">
+        <div class="progress-header row">
+          <p class="header-name col-sm-12 col-md-12 col-lg-12">Overall Equipment Efficiency and Key Performance Indicators</p>
+        </div>
+        <div class="progress-nav row">
+          <app-tabs>
+            <app-tab [tabTitle]="'Overall Efficiency'"></app-tab>
+            <app-tab [tabTitle]="'Availability'"></app-tab>
+            <app-tab [tabTitle]="'Performance'"></app-tab>
+            <app-tab [tabTitle]="'Quality'"></app-tab>
+            <app-tab [tabTitle]="'Units per hour'"></app-tab>
+            <app-tab [tabTitle]="'kWh per hour'"></app-tab>
+          </app-tabs>
+        </div>
+        <div class="progress-bar-container row">
+            <div id="gauge" class="gauge-container col-sm-5 col-md-5 col-lg-5"></div>
+                      <div class="progress-chart col-sm-7 col-md-7 col-lg-7">
+                          <app-tabs>
+                              <app-tab [tabTitle]="'Hour'"></app-tab>
+                              <app-tab [tabTitle]="'Day'"></app-tab>
+                              <app-tab [tabTitle]="'Week'"></app-tab>
+                          </app-tabs>
+                          <!-- <ul class="nav tab-links">
+                            <li [class.active]="active"><a (click)="selectDuration('Hour')">Hour</a></li>
+                            <li [class.active]="active"><a (click)="selectDuration('Day')">Day</a></li>
+                            <li [class.active]="active"><a (click)="selectDuration('Week')">Week</a></li>
+                          </ul> -->
+                          <div id="chart" class="chart-container"></div>
+                        </div>
+        </div>
+      </div>
+    </div>

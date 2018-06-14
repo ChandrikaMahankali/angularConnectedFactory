@@ -1,0 +1,104 @@
+.container-fluid{
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    header {
+        height: 50px;
+        width: 100%;
+        background: #2caf7d;
+        position: fixed;
+        z-index: 1;
+        .navbar{
+            padding: 9px 10px;
+            .app-header{
+                font-size: 20px;
+                width: 33%;
+                text-align: left;
+                color: #ffffff;
+            }
+            .page-header{
+                font-size: 20px;
+                width: 33%;
+                text-align: center;
+                color: #ffffff;
+            } 
+            .account{
+                width: 33%;
+                text-align: right;
+                font-size: 14px;
+                color: #ffffff;
+                .account-name{
+                    display: block;
+                }
+            }
+        }
+    }
+    .sidenav{
+        height: 100%;
+        background: #335672;
+        overflow-x: hidden;
+        position: fixed;
+        float: left;
+        width: 60px;
+        top: 50px;
+        z-index: 1;
+        .navigation-link{
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            width: 48px;
+            height: 48px;
+            font-size: 1.1em;
+            color: #242628;
+            text-align: right;
+            line-height: 110px;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            vertical-align: middle;
+            background-position: 16px 16px;
+        }
+        .navigation-link-hamburger{
+            background-image: url(/assets/images/hamburger.svg);
+        }
+        .navigation-link-home{
+            background-image: url(/assets/images/dashboard.svg);
+        }
+        .navigation-link-browser{
+            background-image: url(/assets/images/icon_server.svg);
+        }
+        .navigation-link-addgateway{
+            background-image: url(/assets/images/icon_addgateway.svg);
+        }
+        .navigation-link-addopcserver{
+            background-image: url(/assets/images/icon_addserver.svg);
+        }
+    }
+    .main-panel{
+        padding-top:50px;
+        .main-container{
+            margin-left: 75px;
+            padding-left: 15px;
+            padding-right: 15px;
+            .dashboard-container{
+                margin-top: 10px;
+                .factory-view{
+                    height: 280px;
+                    overflow: hidden;
+                }
+                .map-view{
+                }
+                .alarms-view{
+                    height: 263px;
+                    /* margin-top: 15px; */
+                    overflow: hidden;
+                }
+                .progress-view{
+                }
+            }
+        }
+    }
+}
